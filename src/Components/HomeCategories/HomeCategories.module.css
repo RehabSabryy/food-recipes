@@ -1,0 +1,12 @@
+.categoriesRow {
+    transition: transform 0.5s ease-in-out;
+}
+.desc {
+    min-height: 200px;
+}
+.banner {
+    background-color: blanchedalmond;;
+}
+.img1,.img2 {
+    height: 230px;
+}

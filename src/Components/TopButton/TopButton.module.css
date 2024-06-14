@@ -1,0 +1,18 @@
+.topBtn {
+    background-color: #E70404;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: opacity 0.3s, transform 0.3s;
+    cursor: pointer;
+    z-index: 9999;
+}
+.topBtn:active {
+    transform: translateY(2px);
+}
+  .topBtn:hover {
+    opacity: 0.8;
+}
