@@ -63,10 +63,10 @@ export default function Navbar({ scrollToRandomRecipes, scrollToCategories, scro
             <div className="collapse navbar-collapse justify-content-around py-2" id="navbarSupportedContent">
               <ul className="navbar-nav mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                  <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                 </li>
                 <li className="nav-item">
-                {location.pathname === '/' ? (
+                {location.pathname === '/home' ? (
                    <a className="nav-link" href='#' onClick={(e) => handleNavigation(e, scrollToCategories)}>Categories</a>
                    ) : (
                      <Link className="nav-link" to="/categories">Categories</Link>
@@ -74,7 +74,7 @@ export default function Navbar({ scrollToRandomRecipes, scrollToCategories, scro
                      )}
                 </li>
                 <li className="nav-item">
-                  {location.pathname === '/' ? (
+                  {location.pathname === '/home' ? (
                     <a className="nav-link" href='#' onClick={(e) => handleNavigation(e, scrollToContact)}>Contact Us</a>
                   ) : (
                     <Link className="nav-link" to="/contact">Contact</Link>

@@ -75,7 +75,7 @@ export default function Login() {
                 {errors.password && <div className="text-danger">{errors.password}</div>}
             </div>
             <div className="d-flex justify-content-center">
-                <button type="submit" className="btn btn-danger w-25">
+                <button type="submit" className="btn btn-danger w-25 py-2 fw-bold">
                     {loading ? (
                         <i className="fa-solid fa-spinner fa-pulse"></i>
                     ):  ("Log In")}
