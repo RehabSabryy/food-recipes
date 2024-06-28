@@ -90,7 +90,7 @@ export default function Navbar({ scrollToRandomRecipes, scrollToCategories, scro
                   <Link className="btn btn-danger ms-3" onClick={handleLogout}>Logout</Link>
                 ) : (
                   <>
-                    <Link to={'/login'} className="ms-4 nav-link active">Login</Link>
+                    <Link to={'/'} className="ms-4 nav-link active">Login</Link>
                     <Link to={'/signup'} className="ms-2 nav-link active">Sign Up</Link>
                   </>  
                 )}

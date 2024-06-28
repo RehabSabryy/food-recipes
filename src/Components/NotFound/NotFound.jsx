@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import notFoundImage from '../../Assets/404.jpg'
 export default function NotFound() {
   const navigate = useNavigate();
   const backToHome = () => {
@@ -8,7 +9,7 @@ export default function NotFound() {
   return (
     <>
       <div className="container d-flex flex-column align-items-center">
-        <img src="/404.jpg" alt="Not Found" className='w-75'/>
+        <img src={notFoundImage} alt="Not Found" className='w-75'/>
       </div>
     </>
   )

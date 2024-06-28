@@ -1,6 +1,8 @@
 import React , { useState } from 'react'
 import { Link,useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import chef from '../../Assets/chef.png';
+
 export default function Login() {
     const navigate = useNavigate();
     const [formData,setFormData] = useState({
@@ -55,7 +57,7 @@ export default function Login() {
             <title>TasteBite | Login</title>
         </Helmet>    
     <div className="col-md-3 bg-danger">
-            <img src="/chef.png" alt="signup" className='d-flex justify-content-center mt-5 pt-5 w-100'/>
+            <img src={chef} alt="signup" className='d-flex justify-content-center mt-5 pt-5 w-100'/>
         </div>
     <div className="col-md-6 mx-auto d-flex flex-column justify-content-center">
         <div className='d-flex justify-content-center align-items-center'>

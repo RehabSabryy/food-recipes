@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Styles from "./HomeCategories.module.css";
 import { Link } from 'react-router-dom';
+import foodImg from '../../Assets/food.png';
+import pizzaImg from '../../Assets/pizza2.png';
 
 export default function HomeCategories({ categories }) {
   const [startIndex, setStartIndex] = useState(0);
@@ -60,9 +62,9 @@ export default function HomeCategories({ categories }) {
           {description && <p>{description}</p>}
         </div>
         <div className={`${Styles.banner} d-flex justify-content-between align-items-center mb-5`}>
-          <img className={Styles.img1} src="food.png" alt="food" />
+          <img className={Styles.img1} src={foodImg} alt="food" />
           <h3 className='text-muted'>Daily Food Recipes</h3>
-          <img className={Styles.img2} src="pizza2.png" alt="food" />
+          <img className={Styles.img2} src={pizzaImg} alt="food" />
         </div>
       </div>
     </>
