@@ -1,7 +1,7 @@
 {
   "name": "food-recipes",
   "version": "0.1.0",
-  "homepage": "https://RehabSabryy.github.io/food-recipes",
+  "homepage": "https://rehabsabryy.github.io/food-recipes",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
@@ -48,6 +48,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.3.0"
   }
 }
